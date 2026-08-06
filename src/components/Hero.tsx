@@ -122,10 +122,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             transition={{ delay: 0.2 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-purple-500/30 text-purple-300 text-sm font-semibold mb-6 shadow-lg shadow-purple-950/40"
           >
-            <span className="text-xl">Hello</span>
-            <span className="animate-bounce">👋</span>
+            <span className="text-xl">✨ hey, i'm </span>
+            
             <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-ping ml-1" />
-            <span className="text-xs text-slate-400 font-mono">AVAILABLE FOR OPPORTUNITIES</span>
           </motion.div>
 
           {/* Large Name */}
