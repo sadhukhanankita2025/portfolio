@@ -80,7 +80,7 @@ export const PROJECTS: Project[] = [
     techStack: ["Python", "Streamlit", "Scikit-learn", "Random Forest", "XGBoost", "LightGBM", "CatBoost", "SHAP", "Plotly"],
     cardAccent: "rose",
     githubUrl: "https://github.com/sadhukhanankita2025/SepsisInsight",
-    liveUrl: "https://sepsis-insight.demo.app",
+    liveUrl: "https://sepasis-ai-detect.netlify.app/",
     image: "https://images.unsplash.com/photo-1504813184591-01572f98c85f?q=80&w=1200&auto=format&fit=crop",
     featured: true,
     metrics: "93.5% ROC-AUC Score"
@@ -104,7 +104,7 @@ export const PROJECTS: Project[] = [
     cardAccent: "emerald",
     githubUrl: "https://github.com/sadhukhanankita2025/AI-Disease-Predictor",
     liveUrl: "https://ai-disease-predictor-cknie3tvx6gklujdd4ifl7.streamlit.app/",
-    image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200&auto=format&fit=crop",
+    image: "../../public/disease-predictor.png",
     featured: true,
     metrics: "Instant Diagnostic Predictions"
   },
@@ -126,7 +126,7 @@ export const PROJECTS: Project[] = [
     techStack: ["Python", "TensorFlow", "Streamlit", "Librosa", "OpenCV", "NumPy", "Scikit-learn"],
     cardAccent: "cyan",
     githubUrl: "https://github.com/sadhukhanankita2025/Smart-Cough-Analyzer-",
-    liveUrl: "https://smart-cough-analyzer.demo.app",
+    liveUrl: "https://cough-analyze.netlify.app/",
     image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1200&auto=format&fit=crop",
     featured: true,
     metrics: "92% Acoustic Classification Accuracy"
