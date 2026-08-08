@@ -306,7 +306,7 @@ export const Contact: React.FC = () => {
                         value={formData.name}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        placeholder="e.g. John Doe"
+                        placeholder="Enter your name"
                         className={`w-full bg-slate-950/80 border text-sm text-white placeholder-slate-500 rounded-xl px-4 py-3 focus:outline-none transition-all ${
                           touched.name && errors.name
                             ? 'border-rose-500/80 focus:border-rose-500 bg-rose-950/10'
@@ -343,7 +343,7 @@ export const Contact: React.FC = () => {
                         value={formData.email}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        placeholder="e.g. john@example.com"
+                        placeholder="Enter your email"
                         className={`w-full bg-slate-950/80 border text-sm text-white placeholder-slate-500 rounded-xl px-4 py-3 focus:outline-none transition-all ${
                           touched.email && errors.email
                             ? 'border-rose-500/80 focus:border-rose-500 bg-rose-950/10'
@@ -381,7 +381,7 @@ export const Contact: React.FC = () => {
                       value={formData.subject}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      placeholder="e.g. Project Inquiry / Collaboration"
+                      placeholder="Enter subject"
                       className={`w-full bg-slate-950/80 border text-sm text-white placeholder-slate-500 rounded-xl px-4 py-3 focus:outline-none transition-all ${
                         touched.subject && errors.subject
                           ? 'border-rose-500/80 focus:border-rose-500 bg-rose-950/10'
@@ -418,7 +418,7 @@ export const Contact: React.FC = () => {
                       value={formData.message}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      placeholder="Hello Ankita, I would like to discuss..."
+                      placeholder="Enter your message here..."
                       className={`w-full bg-slate-950/80 border text-sm text-white placeholder-slate-500 rounded-xl px-4 py-3 focus:outline-none transition-all resize-none ${
                         touched.message && errors.message
                           ? 'border-rose-500/80 focus:border-rose-500 bg-rose-950/10'
