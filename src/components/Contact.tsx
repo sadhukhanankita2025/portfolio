@@ -184,11 +184,19 @@ export const Contact: React.FC = () => {
 
     setIsSubmitting(true);
 
-    // Simulate API call delay
+    // Construct mailto link with prefilled subject & message details
+    const mailtoSubject = encodeURIComponent(`[Portfolio Contact] ${formData.subject}`);
+    const mailtoBody = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    const mailtoUrl = `mailto:${PERSONAL_INFO.email}?subject=${mailtoSubject}&body=${mailtoBody}`;
+
+    // Trigger email client directly
     setTimeout(() => {
+      window.location.href = mailtoUrl;
       setIsSubmitting(false);
       setIsSubmitted(true);
-    }, 1200);
+    }, 800);
   };
 
   const handleReset = () => {
@@ -271,18 +279,27 @@ export const Contact: React.FC = () => {
                 <div className="w-16 h-16 rounded-full bg-emerald-500/20 border-2 border-emerald-500/50 flex items-center justify-center text-emerald-400 mb-4 shadow-lg shadow-emerald-500/20 animate-bounce">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
-                <h4 className="text-2xl font-black text-white mb-2">Message Sent!</h4>
+                <h4 className="text-2xl font-black text-white mb-2">Message Drafted & Dispatched!</h4>
                 <p className="text-slate-300 max-w-md text-sm mb-6 leading-relaxed">
-                  Thank you, <span className="text-purple-300 font-bold">{formData.name}</span>! Your message has been sent successfully. I'll get back to you at <span className="text-cyan-300 font-mono">{formData.email}</span> as soon as possible.
+                  Thank you, <span className="text-purple-300 font-bold">{formData.name}</span>! Your default email app was launched to send your message directly to <span className="text-cyan-300 font-mono">{PERSONAL_INFO.email}</span>.
                 </p>
-                <button
-                  type="button"
-                  onClick={handleReset}
-                  className="px-6 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold text-xs tracking-wider flex items-center gap-2 transition-all cursor-pointer"
-                >
-                  <RotateCcw className="w-4 h-4 text-purple-400" />
-                  <span>Send Another Message</span>
-                </button>
+                <div className="flex flex-wrap items-center justify-center gap-3">
+                  <a
+                    href={`mailto:${PERSONAL_INFO.email}?subject=${encodeURIComponent(`[Portfolio Contact] ${formData.subject}`)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`}
+                    className="px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs tracking-wider flex items-center gap-2 transition-all shadow-lg shadow-purple-600/30"
+                  >
+                    <Mail className="w-4 h-4" />
+                    <span>Open Email App Again</span>
+                  </a>
+                  <button
+                    type="button"
+                    onClick={handleReset}
+                    className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold text-xs tracking-wider flex items-center gap-2 transition-all cursor-pointer"
+                  >
+                    <RotateCcw className="w-4 h-4 text-purple-400" />
+                    <span>Write Another Message</span>
+                  </button>
+                </div>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5" noValidate>
