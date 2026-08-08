@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
     cardAccent: "rose",
     githubUrl: "https://github.com/sadhukhanankita2025/SepsisInsight",
     liveUrl: "https://sepasis-ai-detect.netlify.app/",
-    image: "/public/SepsisInsight.png",
+    image: "/SepsisInsight.png",
     featured: true,
     metrics: "93.5% ROC-AUC Score"
   },
@@ -79,7 +79,7 @@ export const PROJECTS: Project[] = [
     cardAccent: "emerald",
     githubUrl: "https://github.com/sadhukhanankita2025/AI-Disease-Predictor",
     liveUrl: "https://ai-disease-predictor-cknie3tvx6gklujdd4ifl7.streamlit.app/",
-    image: " /public/HealthCare.png",
+    image: "/Healthcare.png",
     featured: true,
     metrics: "Instant Diagnostic Predictions"
   },
@@ -102,7 +102,7 @@ export const PROJECTS: Project[] = [
     cardAccent: "cyan",
     githubUrl: "https://github.com/sadhukhanankita2025/Smart-Cough-Analyzer-",
     liveUrl: "https://cough-analyze.netlify.app/",
-    image: "/public/smart-cough-analyzer.png",
+    image: "/smart-cough-analyzer.png",
     featured: true,
     metrics: "92% Acoustic Classification Accuracy"
   },
@@ -127,7 +127,7 @@ export const PROJECTS: Project[] = [
     cardAccent: "purple",
     githubUrl: "https://github.com/sadhukhanankita2025/CORTEX-VISION",
     liveUrl: "https://cortex-vision.demo.app",
-    image: "/public/CORTEX-VISION.jpeg",
+    image: "/CORTEX-VISION.jpeg",
     featured: true,
     metrics: "94.81% Classification Accuracy"
   },
@@ -175,7 +175,7 @@ export const PROJECTS: Project[] = [
     cardAccent: "blue",
     githubUrl: "https://github.com/sadhukhanankita2025/HealthCare",
     liveUrl: "https://doctor-appointment.demo.app",
-    image: "/public/eClinic.png",
+    image: "/eClinic.png",
     featured: true,
     metrics: "Role-Based Doctor & Patient Portal"
   },
@@ -198,7 +198,7 @@ export const PROJECTS: Project[] = [
     cardAccent: "emerald",
     githubUrl: "https://github.com/ankitasadhukhan/Hotel-Management-System",
     liveUrl: "https://hotel-mgmt.demo.app",
-    image: "/public/hotel.png",
+    image: "/hotel.png",
     featured: true,
     metrics: "Online Reservation & Admin Portal"
   }
