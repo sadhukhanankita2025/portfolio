@@ -321,16 +321,16 @@ export const Projects: React.FC = () => {
                     className={`group relative rounded-3xl bg-slate-900/80 backdrop-blur-xl border ${styles.border} ${styles.glow} transition-all duration-500 flex flex-col justify-between overflow-hidden shadow-2xl hover:-translate-y-1 h-full`}
                   >
                     {/* Top Glowing Header Accent Bar */}
-                    <div className={`h-1.5 w-full bg-gradient-to-r ${styles.gradient}`} />
+                    <div className={`h-1.5 w-1.5 bg-gradient-to-r ${styles.gradient}`} />
 
                     <div className="p-6 sm:p-8 flex flex-col justify-between h-full">
                       <div>
                         {/* Top Media Image Banner */}
-                        <div className="relative h-56 sm:h-64 rounded-2xl overflow-hidden mb-6 border border-slate-800 shadow-inner group-hover:border-slate-700 transition-colors">
+                        <div className="relative h-59 sm:h-64 rounded-2xl overflow-hidden mb-6 border border-slate-800 shadow-inner group-hover:border-slate-700 transition-colors">
                           <img
                             src={project.image}
                             alt={project.title}
-                            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-95"
+                            className="w-full h-full object-cover object-center group-hover:scale-95 transition-transform duration-700 filter brightness-95"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
 

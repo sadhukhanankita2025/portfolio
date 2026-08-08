@@ -37,31 +37,6 @@ export const STATS = [
 
 export const PROJECTS: Project[] = [
   {
-    id: "cortex-vision",
-    title: "CORTEX-VISION",
-    subtitle: "AI-Powered Brain Tumor MRI Classification & Explainability",
-    category: "Deep Learning & Explainable AI",
-    description: "Developed an AI-powered web application for brain tumor MRI classification using the EfficientNetB0 deep learning model. Achieved 94.81% classification accuracy on MRI datasets through image preprocessing and model optimization. Integrated SHAP Explainable AI (XAI) to visualize feature importance and improve prediction transparency. Built a responsive React frontend with secure Flask REST APIs for real-time image prediction. Implemented patient report generation and prediction history management.",
-    detailedDescription: "Architected a deep learning pipeline utilizing EfficientNetB0 for precise multi-class brain tumor MRI scanning. Leveraged SHAP (SHapley Additive exPlanations) to construct feature attribution heatmaps, granting radiologists transparent diagnostic reasoning behind each classification.",
-    features: [
-      "Brain Tumor MRI Classification",
-      "EfficientNetB0 Deep Learning Model",
-      "94.81% Classification Accuracy",
-      "SHAP Explainable AI (XAI)",
-      "Feature Importance Heatmaps",
-      "Flask REST API Backend",
-      "Responsive React Interface",
-      "PDF Patient Report Generation"
-    ],
-    techStack: ["React.js", "TypeScript", "Vite", "Tailwind CSS", "Flask", "Python", "PyTorch", "OpenCV", "SHAP"],
-    cardAccent: "purple",
-    githubUrl: "https://github.com/sadhukhanankita2025/CORTEX-VISION",
-    liveUrl: "https://cortex-vision.demo.app",
-    image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1200&auto=format&fit=crop",
-    featured: true,
-    metrics: "94.81% Classification Accuracy"
-  },
-  {
     id: "sepsis-insight",
     title: "SepsisInsight",
     subtitle: "Explainable AI for Early Sepsis Detection",
@@ -81,7 +56,7 @@ export const PROJECTS: Project[] = [
     cardAccent: "rose",
     githubUrl: "https://github.com/sadhukhanankita2025/SepsisInsight",
     liveUrl: "https://sepasis-ai-detect.netlify.app/",
-    image: "https://images.unsplash.com/photo-1504813184591-01572f98c85f?q=80&w=1200&auto=format&fit=crop",
+    image: "../../public/SepsisInsight.png",
     featured: true,
     metrics: "93.5% ROC-AUC Score"
   },
@@ -104,7 +79,7 @@ export const PROJECTS: Project[] = [
     cardAccent: "emerald",
     githubUrl: "https://github.com/sadhukhanankita2025/AI-Disease-Predictor",
     liveUrl: "https://ai-disease-predictor-cknie3tvx6gklujdd4ifl7.streamlit.app/",
-    image: "../../public/disease-predictor.png",
+    image: "../../public/HealthCare.png",
     featured: true,
     metrics: "Instant Diagnostic Predictions"
   },
@@ -127,9 +102,34 @@ export const PROJECTS: Project[] = [
     cardAccent: "cyan",
     githubUrl: "https://github.com/sadhukhanankita2025/Smart-Cough-Analyzer-",
     liveUrl: "https://cough-analyze.netlify.app/",
-    image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1200&auto=format&fit=crop",
+    image: "../../public/smart-cough-analyzer.png",
     featured: true,
     metrics: "92% Acoustic Classification Accuracy"
+  },
+  {
+    id: "cortex-vision",
+    title: "CORTEX-VISION",
+    subtitle: "AI-Powered Brain Tumor MRI Classification & Explainability",
+    category: "Deep Learning & Explainable AI",
+    description: "Developed an AI-powered web application for brain tumor MRI classification using the EfficientNetB0 deep learning model. Achieved 94.81% classification accuracy on MRI datasets through image preprocessing and model optimization. Integrated SHAP Explainable AI (XAI) to visualize feature importance and improve prediction transparency. Built a responsive React frontend with secure Flask REST APIs for real-time image prediction. Implemented patient report generation and prediction history management.",
+    detailedDescription: "Architected a deep learning pipeline utilizing EfficientNetB0 for precise multi-class brain tumor MRI scanning. Leveraged SHAP (SHapley Additive exPlanations) to construct feature attribution heatmaps, granting radiologists transparent diagnostic reasoning behind each classification.",
+    features: [
+      "Brain Tumor MRI Classification",
+      "EfficientNetB0 Deep Learning Model",
+      "94.81% Classification Accuracy",
+      "SHAP Explainable AI (XAI)",
+      "Feature Importance Heatmaps",
+      "Flask REST API Backend",
+      "Responsive React Interface",
+      "PDF Patient Report Generation"
+    ],
+    techStack: ["React.js", "TypeScript", "Vite", "Tailwind CSS", "Flask", "Python", "PyTorch", "OpenCV", "SHAP"],
+    cardAccent: "purple",
+    githubUrl: "https://github.com/sadhukhanankita2025/CORTEX-VISION",
+    liveUrl: "https://cortex-vision.demo.app",
+    image: "../../public/CORTEX-VISION.jpeg",
+    featured: true,
+    metrics: "94.81% Classification Accuracy"
   },
   {
     id: "neuroai-cognitive-decline",
@@ -175,7 +175,7 @@ export const PROJECTS: Project[] = [
     cardAccent: "blue",
     githubUrl: "https://github.com/sadhukhanankita2025/HealthCare",
     liveUrl: "https://doctor-appointment.demo.app",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop",
+    image: "../../public/eClinic.png",
     featured: true,
     metrics: "Role-Based Doctor & Patient Portal"
   },
@@ -198,7 +198,7 @@ export const PROJECTS: Project[] = [
     cardAccent: "emerald",
     githubUrl: "https://github.com/ankitasadhukhan/Hotel-Management-System",
     liveUrl: "https://hotel-mgmt.demo.app",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop",
+    image: "../../public/hotel.png",
     featured: true,
     metrics: "Online Reservation & Admin Portal"
   }
